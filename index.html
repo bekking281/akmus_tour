@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uz"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Akmus Tour — Sayohatingizni bugundan boshlang</title>
+<meta name="description" content="Akmus Tour: Turkiya, Dubay, Maldiv, Tailand va boshqa yo‘nalishlarga qulay tur paketlari.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body class="loading">
+<canvas id="stars" aria-hidden="true"></canvas><div class="cursor" aria-hidden="true"></div>
+<header class="nav glass"><a href="#hero" class="logo">✈️ AKMUS TOUR</a>
+<nav aria-label="Asosiy"><a href="#hero">Bosh sahifa</a><a href="#tours">Turlar</a><a href="#about">Biz haqimizda</a><a href="#contact">Aloqa</a></nav></header>
+<main id="stage">
+<section class="layer" id="hero"><div class="inner hero">
+<div class="portal" aria-hidden="true"><div class="sphere"><svg viewBox="0 0 200 200"><g fill="none" stroke="#9fe8ff" stroke-opacity=".35"><ellipse cx="100" cy="100" rx="98" ry="30"/><ellipse cx="100" cy="100" rx="98" ry="64"/><ellipse cx="100" cy="100" rx="40" ry="98"/><ellipse cx="100" cy="100" rx="75" ry="98"/><path d="M100 2V198M2 100H198"/></g>
+<g fill="#cdf5ff" fill-opacity=".5"><path d="M45 60q20-18 40-6 8 16-8 24-18 0-32-18zM110 105q22-10 36 8-4 26-22 30-14-14-14-38zM120 50q14-8 28 2-8 14-24 10z"/></g>
+<g fill="#7ff" ><circle cx="70" cy="62" r="2.5"/><circle cx="128" cy="118" r="2.5"/><circle cx="135" cy="56" r="2.5"/></g></svg></div>
+<svg class="route" viewBox="0 0 400 400"><path id="rt" d="M20 230C60 40 340 20 380 170S200 380 20 230" fill="none" stroke="#7fe3ff" stroke-width="1.5" stroke-dasharray="4 8" opacity=".6"/></svg><span class="plane">✈</span></div>
+<div class="copy"><p class="brand">AKMUS TOUR</p><h1>Sayohatingizni bugundan boshlang</h1>
+<p class="sub">Dunyoning eng chiroyli yo‘nalishlariga sayohat qiling.</p>
+<p class="small">Siz uchun qulay tur paketlari, mehmonxona va unutilmas taassurotlar.</p>
+<div class="btns"><a class="btn glass" href="#tours" data-go="2">Turlarni ko‘rish</a><a class="btn glass ghost" href="#contact" data-go="3">Biz bilan bog‘lanish</a></div></div>
+<div class="badge glass">420$ dan boshlab</div></div></section>
+<section class="layer" id="about"><div class="inner"><h2>Dunyo sizni kutmoqda</h2>
+<p class="lead">Akmus Tour — sayohatlaringizni qulay, zavqli va unutilmas qilishga yordam beruvchi tur kompaniyasi.</p>
+<div class="grid3"><article class="glass feat tilt"><i>🧭</i><h3>Qulaylik</h3><p>Sayohatingiz uchun qulay tur paketlarini tanlang.</p></article>
+<article class="glass feat tilt"><i>🛡️</i><h3>Ishonch</h3><p>Bron qilish va sayohat jarayonida sizga yordam beramiz.</p></article>
+<article class="glass feat tilt"><i>🌅</i><h3>Unutilmas taassurotlar</h3><p>Dunyoning mashhur va go‘zal yo‘nalishlarini kashf eting.</p></article></div></div></section>
+<section class="layer scrolly" id="tours"><div class="inner"><h2>Mashhur yo‘nalishlar</h2><div class="tours" id="grid"></div></div></section>
+<section class="layer scrolly" id="contact"><div class="inner"><h2>Sayohatingizni rejalashtiramiz</h2>
+<p class="lead">O‘zingizga mos yo‘nalishni tanlang va biz bilan bog‘laning.</p>
+<div class="glass panel"><a href="tel:+998882255050">📞 +998 88 225 50 50</a><a href="https://t.me/Akmus_Ruxshona" target="_blank" rel="noopener">Telegram: @Akmus_Ruxshona</a><span>941905150</span>
+<button class="btn glass" data-book="">Bron qilish</button></div>
+<footer class="glass foot"><div><b>AKMUS TOUR</b><p>Sayohatingizni bugundan boshlang.</p></div>
+<div><a href="#tours">Turlar</a> <a href="#about">Biz haqimizda</a> <a href="#contact">Aloqa</a><p>+998 88 225 50 50 · @Akmus_Ruxshona</p></div>
+<p class="note">Narxlar va joylar mavjudligi e’lon qilingan vaqtdagi holat bo‘yicha amal qiladi.</p><p class="note">© 2026 Akmus Tour. Barcha huquqlar himoyalangan.</p></footer></div></section>
+</main>
+<div class="modal" id="detail" role="dialog" aria-modal="true" aria-labelledby="dt" hidden><div class="glass box"><button class="x" data-close aria-label="Yopish">✕</button>
+<img id="di" alt=""><div class="dbody"><h2 id="dt"></h2><p id="dm"></p><p id="dd"></p><p class="price" id="dp"></p><button class="btn glass" id="db">Bron qilish</button></div></div></div>
+<div class="modal" id="book" role="dialog" aria-modal="true" aria-labelledby="bt" hidden><form class="glass box form" id="bf"><button type="button" class="x" data-close aria-label="Yopish">✕</button><h2 id="bt">Bron qilish</h2>
+<label>Ism<input name="n" required></label><label>Telefon raqami<input name="p" type="tel" required></label>
+<label>Yo‘nalish<select name="d" id="bd"></select></label><label>Sayohatchilar soni<input name="c" type="number" min="1" value="2"></label>
+<label>Xabar<textarea name="m" rows="2"></textarea></label><button class="btn glass" type="submit">So‘rov yuborish</button>
+<div id="res" hidden><p>So‘rovingiz tayyor. Quyidagi kontakt orqali biz bilan bog‘laning.</p><a class="btn glass" id="tg" target="_blank" rel="noopener">Telegram orqali yuborish</a> <a class="btn glass ghost" href="tel:+998882255050">Qo‘ng‘iroq qilish</a></div></form></div>
+<script src="script.js"></script></body></html>
